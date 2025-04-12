@@ -7,7 +7,7 @@ __author__ = "730578934"
 
 
 class River:
-    """River ecosystem."""
+    """Creates and populates a river."""
 
     day: int
     bears: list[Bear]
