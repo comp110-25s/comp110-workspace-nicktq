@@ -1,11 +1,9 @@
+"""File to define River class."""
+
 from exercises.EX04.fish import Fish
 from exercises.EX04.bear import Bear
 
-"""The goal of this program is to simulate a river with bears and fish!"""
-
 __author__ = "730578934"
-
-"""File to define River class."""
 
 
 class River:
@@ -67,7 +65,7 @@ class River:
 
     def repopulate_fish(self):
         """Repopulates river where each pair of fish produces 4 offspring a day."""
-        pairs_of_fish: int = len(self.bears) // 2
+        pairs_of_fish: int = len(self.fish) // 2
         for _ in range(pairs_of_fish * 4):
             self.fish.append(Fish())
         return None

@@ -1,8 +1,6 @@
-"""The goal of this program is to simulate a river with bears and fish!"""
+"""File to define Fish class."""
 
 __author__ = "730578934"
-
-"""File to define Fish class."""
 
 
 class Fish:
@@ -16,6 +14,6 @@ class Fish:
         return None
 
     def one_day(self):
-        """Simulates one day for fish."""
+        """Simulates one day for the fish."""
         self.age += 1
         return None

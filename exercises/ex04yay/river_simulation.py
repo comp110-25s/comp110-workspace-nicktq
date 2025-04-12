@@ -1,6 +1,6 @@
-from exercises.EX04.river import River
-
 """File to define River simulation."""
+
+from exercises.EX04.river import River
 
 my_river: River = River(num_fish=10, num_bears=2)
 
