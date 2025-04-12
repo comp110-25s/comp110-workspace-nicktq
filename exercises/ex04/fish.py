@@ -1,3 +1,7 @@
+"""The goal of this program is to simulate a river with bears and fish!"""
+
+__author__ = "730578934"
+
 """File to define Fish class."""
 
 

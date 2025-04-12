@@ -1,7 +1,11 @@
-"""File to define River class."""
+from exercises.EX04.fish import Fish
+from exercises.EX04.bear import Bear
 
-from exercises.ex04.fish import Fish
-from exercises.ex04.bear import Bear
+"""The goal of this program is to simulate a river with bears and fish!"""
+
+__author__ = "730578934"
+
+"""File to define River class."""
 
 
 class River:
