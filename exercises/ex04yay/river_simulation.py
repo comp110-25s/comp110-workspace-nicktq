@@ -1,4 +1,4 @@
-"""File to define River simulation."""
+"""Simulates a river with bears and fish."""
 
 from exercises.EX04.river import River
 
