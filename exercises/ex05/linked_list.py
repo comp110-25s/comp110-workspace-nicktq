@@ -29,7 +29,7 @@ class Node:
 
 
 def last(head: Node) -> int:  # from lecture
-    """Returns the value of the last Node in a linked list"""
+    """Returns the value of the last Node in a linked list."""
     if head.next is None:  # Base Case
         return head.value
     else:
