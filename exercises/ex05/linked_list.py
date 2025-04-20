@@ -1,4 +1,4 @@
-"""Implementing algorithms to process a singly-linked list data structure"""
+"""Implementing algorithms to process a singly-linked list data structure."""
 
 from __future__ import annotations
 
@@ -12,10 +12,12 @@ class Node:
     next: Node | None
 
     def __init__(self, value: int, next: Node | None):
+        """Initializes the value and next value for a Node"""
         self.value = value
         self.next = next
 
     def __str__(self) -> str:
+        """Magic method that returns a string representation"""
         if self.next is None:
             return f"{self.value} -> None"
         else:
@@ -26,7 +28,8 @@ class Node:
 # print(courses)
 
 
-def last(head: Node) -> int:
+def last(head: Node) -> int:  # from lecture
+    """Returns the value of the last Node in a linked list"""
     if head.next is None:  # Base Case
         return head.value
     else:
@@ -36,8 +39,8 @@ def last(head: Node) -> int:
 # print(last(courses))
 
 
-def recursive_range(start: int, end: int) -> Node | None:
-    """Create linked list with values from start to end (exclusive)"""
+def recursive_range(start: int, end: int) -> Node | None:  # from lecture
+    """Creates a linked list with values from start to end (exclusive)."""
     if start < end:
         rest: Node | None = recursive_range(start=start + 1, end=end)
         return Node(start, rest)
@@ -52,7 +55,7 @@ def recursive_range(start: int, end: int) -> Node | None:
 
 
 def value_at(head: Node | None, index: int) -> int:
-    """Returns the value of Node at a given index"""
+    """Returns the value of Node at a given index."""
     if head is None:  # Edge case
         raise IndexError("Index is out of bounds on the list")
     elif index == 0:  # Base Case
@@ -66,7 +69,7 @@ def value_at(head: Node | None, index: int) -> int:
 
 
 def max(head: Node | None) -> int:
-    """Given a head Node, return the maximum value in linked list"""
+    """Given a head Node, return the maximum value in linked list."""
     if head is None:  # Edge case
         raise ValueError("Cannot call max with None")
     elif head.next is None:  # Base case
@@ -86,7 +89,7 @@ def max(head: Node | None) -> int:
 
 
 def linkify(items: list[int]) -> Node | None:
-    """Returns a linked list with the same order and values as the given list"""
+    """Returns a linked list with the same order and values as the given list."""
     if len(items) == 0:  # Base case
         return None
     else:  # Recursive case
@@ -97,7 +100,7 @@ def linkify(items: list[int]) -> Node | None:
 
 
 def scale(head: Node | None, factor: int) -> Node | None:
-    """Return a new linked list where each value is multiplied by a given factor"""
+    """Return a new linked list where each value is multiplied by a given factor."""
     if head is None:  # Base case
         return None
     else:  # Recursive case
