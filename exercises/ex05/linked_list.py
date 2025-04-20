@@ -12,12 +12,12 @@ class Node:
     next: Node | None
 
     def __init__(self, value: int, next: Node | None):
-        """Initializes the value and next value for a Node"""
+        """Initializes the value and next value for a Node."""
         self.value = value
         self.next = next
 
     def __str__(self) -> str:
-        """Magic method that returns a string representation"""
+        """Magic method that returns a string representation."""
         if self.next is None:
             return f"{self.value} -> None"
         else:
